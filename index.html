@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Precio de Bitcoin en tiempo real</title>
+    <style>
+    
+      #precio {
+        font-size: 3em;
+        text-align: center;
+        font-family: Arial, sans-serif; /* Cambiar la fuente */
+        border: 2px solid #1abc9c;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  font-size: 64px;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+      }
+        body {
+          background-color: #f0f0f0;
+          font-family: Arial, sans-serif;
+        }
+        h1 {
+          text-align: center;
+          margin-top: 50px;
+        }
+        p {
+          text-align: center;
+          margin-top: 50px;
+        }
+        @font-face {
+                      font-family: 'Roboto';
+                      src: url('ruta/a/la/fuente/Roboto.woff2') format('woff2'),
+                           url('ruta/a/la/fuente/Roboto.woff') format('woff');
+                      font-weight: normal;
+                      font-style: normal;
+                    }
+
+    </style>
+  </head>
+  <body>
+    <h1>Precio de Bitcoin en tiempo real</h1>
+    <p>El precio actual de Bitcoin es:</p>
+    <p id="precio"></p>
+    
+    <script src="main.js"></script>
+    
+    <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.20.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.20.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAkaYgMjxqphgJLn40FL5Qea4p22QTcSLM",
+    authDomain: "babilonia-1c769.firebaseapp.com",
+    projectId: "babilonia-1c769",
+    storageBucket: "babilonia-1c769.appspot.com",
+    messagingSenderId: "911658514089",
+    appId: "1:911658514089:web:84626ebea433d4867d9bb8",
+    measurementId: "G-ZQFLK44YPY"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+  </body>
+</html>
